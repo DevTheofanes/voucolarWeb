@@ -13,7 +13,7 @@ export const Content = styled.div`
 export const BoxTitle = styled.div`
   margin-top: 30px;
   background-color:rgb(54, 181, 176);
-  height: 269px;
+  height: 16.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@ export const BoxTitle = styled.div`
 
 export const BoxTitleTextBold = styled.text`
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Slabo 27px", sans-serif;
   color: #fff;
   font-weight: bold;
@@ -30,7 +30,12 @@ export const BoxTitleTextBold = styled.text`
 
 export const BoxTitleTextBottom = styled.text`
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
+
+  @media (max-width:600px){
+    max-width: 76%;
+    text-align: center;
+  }
 `;
 
 export const BoxInfos = styled.div`
@@ -39,8 +44,17 @@ export const BoxInfos = styled.div`
 `;
 
 export const BoxInfosImage = styled.img`
-  width:525px;
-  height: 342px;
+  width: 32.8rem;
+  height: 21.3rem;
+
+  @media (max-width:800px){
+    width: 22.8rem;
+    height: 16.2rem;
+  }
+
+  @media (max-width:600px){
+    display: none;
+  }
 `;
 
 export const BoxInfosText = styled.text`

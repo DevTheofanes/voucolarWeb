@@ -20,44 +20,56 @@ export const QuantityButtons = styled.div`
 
 export const MinusButton = styled.button`
   background-color: rgba(0,0,0,.03);
-box-shadow: none;
-border-color: rgba(0,0,0,.09);
-color: currentColor !important;
-border-radius: 99px;
-overflow: hidden;
-position: relative;
-text-shadow: 1px 1px 1px #fff;
-border: 1px solid #ddd;
-text-transform: none;
-font-weight: 400;
-padding-left: .5em;
-padding-right: .5em;
-border-right: 0 !important;
-border-top-right-radius: 0 !important;
-border-bottom-right-radius: 0 !important;
-display: inline-block;
-margin: 0;
-font-size: .97em;
-letter-spacing: .03em;
-cursor: pointer;
-text-align: center;
-text-decoration: none;
-line-height: 2.4em;
-min-height: 2.5em;
-padding: 0 1.2em;
-max-width: 100%;
-text-rendering: optimizeLegibility;
-box-sizing: border-box;
--webkit-appearance: button;
-touch-action: manipulation;
-font: inherit;
+  box-shadow: none;
+  border-color: rgba(0,0,0,.09);
+  color: currentColor !important;
+  border-radius: 99px;
+  overflow: hidden;
+  position: relative;
+  text-shadow: 1px 1px 1px #fff;
+  border: 1px solid #ddd;
+  text-transform: none;
+  font-weight: 400;
+  padding-left: .5em;
+  padding-right: .5em;
+  border-right: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  display: inline-block;
+  margin: 0;
+  font-size: .97em;
+  letter-spacing: .03em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.4em;
+  min-height: 2.5em;
+  padding: 0 1.2em;
+  max-width: 100%;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  touch-action: manipulation;
+  font: inherit;
+
+  @media (max-width:800px){
+    padding: 0 0.8rem;
+    line-height: 2rem;
+    min-height: 2.1rem;
+  }
+
+  @media (max-width:600px){
+  padding: 0 0.6rem;
+  line-height: 1.6rem;
+  min-height: 1.8rem;
+ }
 `;
 
 export const InputQuantity = styled.input`
 /* max-width: 2.5em; */
 /* width: 2.5em; */
 cursor: initial;
-width: 40px;
+width: 2.5rem;
 text-align: center;
 border-radius: 0 !important;
 font-size: 1em;
@@ -76,6 +88,18 @@ border: 1px solid #ddd;
 align-items: center;
 justify-content:center;
 height: 2.507em;
+
+@media (max-width:800px){
+  padding: 0 0.8rem;
+  line-height: 2rem;
+  min-height: 2.1rem;
+ }
+
+ @media (max-width:600px){
+  padding: 0 0.6rem;
+  line-height: 1.6rem;
+  min-height: 1.8rem;
+ }
 `;
 
 export const PlusButton = styled.button`
@@ -108,6 +132,18 @@ padding: 0 1.2em;
 max-width: 100%;
 text-rendering: optimizeLegibility;
 box-sizing: border-box;
+
+@media (max-width:800px){
+    padding: 0 0.8rem;
+    line-height: 2rem;
+    min-height: 2.1rem;
+  }
+
+  @media (max-width:600px){
+  padding: 0 0.6rem;
+  line-height: 1.6rem;
+  min-height: 1.8rem;
+ }
 `;
 
 

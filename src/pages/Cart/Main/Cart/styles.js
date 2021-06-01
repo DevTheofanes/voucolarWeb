@@ -21,4 +21,10 @@ export const CartContent = styled.div`
   max-width: 1110px;
   display: flex;
   flex-flow: row wrap;
+
+  @media (max-width:600px){
+    display: grid;
+    margin: 0;
+    /* padding: 0 2rem; */
+  }
 `;

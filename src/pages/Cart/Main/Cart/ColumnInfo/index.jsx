@@ -30,7 +30,7 @@ function ColumnInfo() {
               <table cellSpacing={0}>
                 <thead>
                   <tr>
-                    <ProductName colSpan={3}>Produto</ProductName>
+                    <ProductName colSpan={2}>Produto</ProductName>
                     <ProductPrice>Preço</ProductPrice>
                     <ProductPrice>Quantidade</ProductPrice>
                     <ProductSubTotal>Subtotal</ProductSubTotal>

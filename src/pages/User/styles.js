@@ -7,6 +7,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  h1{
+    font-size: 1.75rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -19,6 +23,13 @@ export const Content = styled.div`
 
   width: 48rem;
   background-color:#f7f7f7;
+  overflow: auto;
+
+
+  @media (max-width:600px){
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
 `;
 
 export const OrdersContainer = styled.div`
@@ -26,6 +37,10 @@ export const OrdersContainer = styled.div`
   max-height: 20rem;
   overflow: auto;
 
+  @media (max-width:600px){
+    margin: 0 0 1rem 0;
+    max-height: auto;
+  }
 `;
 
 export const Order = styled.div`
@@ -44,11 +59,22 @@ export const Order = styled.div`
   div + div{
     margin-top: .5rem;
   }
+
+  @media (max-width:600px){
+    span{
+      text-align: right;
+    }
+  }
 `;
 
 export const InfoContainer = styled.div`
   padding-left: 1rem;
   border-left: 1px solid #c1c1c1;
+
+  @media (max-width:600px){
+    padding: 0;
+    border: 0;
+  }
 
   button{
     background-color: #a16695;

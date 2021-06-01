@@ -7,6 +7,18 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 2fr 1.25fr;
   gap: 2rem;
+
+  @media (max-width:800px){
+    margin: 1rem auto;
+
+    padding: 0 8rem;
+  }
+
+  @media (max-width:600px){
+    padding: 0 2rem;
+
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Form = styled.div`
@@ -43,6 +55,10 @@ export const InfoCart = styled.div`
   border: 2px solid #a16695;
   padding: 30px;
 
+  @media (max-width:600px){
+    border: 0;
+  }
+
   h4{
     color: #555;
     text-transform: uppercase;
@@ -70,7 +86,7 @@ export const InfoCart = styled.div`
 
     margin: 2rem 0;
     padding: 0 1rem;
-    height: 2rem; 
+    height: 2.8rem; 
 
     font-size: 1rem;
     color: #fff;

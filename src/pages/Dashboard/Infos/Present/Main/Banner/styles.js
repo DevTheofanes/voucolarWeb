@@ -7,6 +7,11 @@ export const BannerComponent = styled.div`
   position: relative;
   width: 100%;
   min-height: 30px;
+
+  @media (max-width:600px){
+    padding-top: 20rem;
+    background-color: #fff;
+  }
 `;
 
 export const BannerInner = styled.div`
@@ -33,6 +38,10 @@ export const Background = styled.div`
   bottom: 0;
   padding: 0 !important;
   margin: 0 !important;
+
+  @media (max-width:600px){
+    height: 20rem;
+  }
 `;
 
 export const Overlay = styled.div`
@@ -44,6 +53,10 @@ export const Overlay = styled.div`
   right: -1px;
   background-color: rgba(190, 190, 190, 0.2);
   pointer-events: none;
+
+  @media (max-width:600px){
+    height: 0;
+  }
 `;
 
 export const BannerLayer = styled.div`
@@ -51,7 +64,7 @@ export const BannerLayer = styled.div`
   padding-right: 0;
   max-height: 100%;
   height: 100%;
-  position: relative;
+  position: relative !important;
   max-width: 1080px;
   width: 100%;
   margin-left: auto;
@@ -60,12 +73,17 @@ export const BannerLayer = styled.div`
 
 export const TextBox = styled.div`
   width: 40%;
-  font-size: 16px;
+  font-size: 1rem;
   top: 50%;
   transform: translateY(-50%);
   left: 5%;
   max-height: 100%;
   position: absolute !important;
+
+  @media (max-width:600px){
+    width: 60%;
+    top: 50%
+  }
 `;
 
 export const TextBoxShadow = styled.div`
@@ -78,7 +96,7 @@ export const TextBoxShadow = styled.div`
 `;
 
 export const TextInner = styled.div`
-  padding: 30px 30px 30px 30px;
+  padding: 1.9rem;
   text-align: left;
 
   h2 {
@@ -87,7 +105,7 @@ export const TextInner = styled.div`
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     line-height: 1;
-    font-size: 2.9em;
+    font-size: 2.6rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-family: 'Slabo 27px', sans-serif;
@@ -118,5 +136,19 @@ export const TextInner = styled.div`
     padding: 0;
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  @media (max-width:600px){
+    h2{
+      font-size: 1.4rem;
+    }
+
+    h3{
+      font-size: 1rem;
+    }
+
+    p{
+      font-size: 0.8rem;
+    }
   }
 `;

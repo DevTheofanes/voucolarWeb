@@ -35,27 +35,31 @@ export function UserData() {
             <h3>Meus Pedidos</h3>
 
             {
-              orders.map(order => (
-                <Order key={order.id}>
-                  <div>
-                    <strong>Indentificador</strong>
-                    <span>#{order.id}</span>
-                  </div>
-                  <div>
-                    <strong>Status</strong>
-                    <span>{order.status}</span>
-                  </div>
-                  <div>
-                    <strong>Total</strong>
-                    <span>{
-                      new Intl.NumberFormat('pt-BR',{
-                        style: "currency",
-                        currency:"BRL"
-                      }).format(order.total)  
-                    }</span>
-                  </div>
-                </Order>
-              ))
+              orders.length > 0 ? (
+                orders.map(order => (
+                  <Order key={order.id}>
+                    <div>
+                      <strong>Indentificador</strong>
+                      <span>#{order.id}</span>
+                    </div>
+                    <div>
+                      <strong>Status</strong>
+                      <span>{order.status}</span>
+                    </div>
+                    <div>
+                      <strong>Total</strong>
+                      <span>{
+                        new Intl.NumberFormat('pt-BR',{
+                          style: "currency",
+                          currency:"BRL"
+                        }).format(order.total)  
+                      }</span>
+                    </div>
+                  </Order>
+                ))
+              ) : (
+                <span>Você ainda não comprou nenhum produto conosco.</span>
+              )
             }
           </OrdersContainer>
 
@@ -79,3 +83,5 @@ export function UserData() {
     </>
   );
 }
+
+

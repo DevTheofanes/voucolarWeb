@@ -21,6 +21,13 @@ export const Container = styled.div`
     border-bottom: 1px solid #ececec;
     padding-bottom: 0.5rem;
   }
+
+  @media (max-width:600px){
+    max-width: 100%;
+    border: 0;
+
+    padding: 0 20px;
+  }
 `;
 
 export const Item = styled.div`

@@ -36,3 +36,4 @@ export function NewHeader({ title, border }) {
     </Container>
   );
 }
+

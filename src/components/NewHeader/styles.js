@@ -18,6 +18,7 @@ export const Container = styled.div`
     text-align: center;
     text-transform: uppercase;
     cursor: initial;
+    font-size: 1.75rem;
   }
 
   div{
@@ -48,5 +49,13 @@ export const Container = styled.div`
       }
     }
     
+  }
+
+  @media (max-width:800px){
+    padding: 0 4rem;
+  }
+
+  @media (max-width:600px){
+    padding: 0 2rem;
   }
 `;

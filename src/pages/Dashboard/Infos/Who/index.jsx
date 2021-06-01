@@ -17,6 +17,7 @@ import {
 import ImgWho from '../assets/quem-somos.jpg'
 
 export function InfosWho() {
+
   return (
     <>
       <TopBar/>

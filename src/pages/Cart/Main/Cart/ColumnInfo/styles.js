@@ -9,6 +9,14 @@ export const ColInfo = styled.div`
   position: relative;
   margin: 0;
   width: 100%;
+
+  @media (max-width:800px){
+    max-width: 100%;
+  }
+
+  @media (max-width:600px){
+    padding: 0;
+  }
 `;
 
 export const Form = styled.form`
@@ -32,6 +40,13 @@ export const ProductName = styled.th`
   border-bottom: 3px solid #ececec;
   line-height: 1.3;
   font-size: 0.9em;
+
+
+  padding-left: 1.4rem;
+
+  @media (max-width:600px){
+    max-width: 100px;
+  }
 `;
 
 export const ProductPrice = styled.th`
@@ -134,22 +149,35 @@ export const ProductNameGrid = styled.td`
     touch-action: manipulation;
     background-color: transparent;
   }
+
+  @media (max-width:900px){
+    a{
+      color: transparent;
+    }
+  }
+
+  @media (max-width:600px){
+    display: none;
+  }
 `;
 
 export const ProductPriceGrid = styled.td`
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
   color: #666;
   padding: 0.5em;
   text-align: left;
   border-bottom: 1px solid #ececec;
   line-height: 1.3;
   font-size: 0.9em;
+  /* padding: 0 !important; */
 
   span {
     white-space: nowrap;
     color: #111;
     font-weight: bold;
+  /* padding: 0 !important; */
+
   }
 `;
 
@@ -259,13 +287,17 @@ export const PlusButton = styled.input`
 
 export const ProductSubTotalGrid = styled.td`
   text-align: right;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-right: 0;
   color: #666;
   border-bottom: 1px solid #ececec;
   line-height: 1.3;
   font-size: 0.9em;
+
+  padding: 15px;
+
+  @media (max-width:800px){
+    display: 12px;
+  }
 
   span {
     white-space: nowrap;
@@ -359,5 +391,12 @@ export const ImagesPhone = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  @media (max-width:600px){
+    img { 
+      width: 3.43rem !important;
+      height: 5.15rem;
+    }
   }
 `;

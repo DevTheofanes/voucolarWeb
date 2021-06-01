@@ -57,4 +57,8 @@ export const LinkRoute = styled(Link)`
   background-color: transparent;    
   font-size: 1.25rem;
   font-family: 'Slabo 27px', serif;
+
+  @media (max-width:800px){
+    font-size: 1rem;
+  }
 `;

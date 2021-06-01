@@ -28,6 +28,13 @@ export const Row = styled.div`
   display: flex;
   flex-flow: row wrap;
   max-width: 1080px;
+
+  
+
+  @media (max-width:600px){
+    display: grid;
+    /* justify-content: center; */
+  }
 `;
 
 export const Column = styled.div`
@@ -35,8 +42,16 @@ export const Column = styled.div`
   flex-basis: 25%;
   position: relative;
   margin: 0;
-  padding: 0 15px 30px;
+  padding: 0 0.9rem 1.8rem;
   width: 100%;
+
+  @media (max-width:600px){
+    max-width: 100%;
+    display: flex;
+    padding: 0;
+    margin-bottom: 1rem;
+    /* justify-content: center; */
+  }
 `;
 
 export const ColInner = styled.div`
@@ -88,5 +103,19 @@ export const IconBoxText = styled.div`
   p {
     margin-bottom: 0;
     margin-top: 0;
+  }
+
+  @media (max-width:600px){
+    h3{
+      font-size: 1rem;
+    }
+
+    p{
+      font-size: 0.8rem;
+      text-align: center;
+
+      max-width: 50%;
+      margin: 0 auto;
+    }
   }
 `;
